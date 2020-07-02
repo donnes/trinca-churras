@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { RootStore, RootStoreProvider, setupRootStore } from './models';
 import { AppRouter } from './router';
-import { theme } from './theme';
+import { theme, GlobalStyle } from './theme';
 
 const App:React.FC = () => {
   const [rootStore, setRootStore] = useState<RootStore | undefined>(undefined);
@@ -17,6 +17,7 @@ const App:React.FC = () => {
     <RootStoreProvider value={rootStore}>
       <ThemeProvider theme={theme}>
         <AppRouter />
+        <GlobalStyle />
       </ThemeProvider>
     </RootStoreProvider>
   );

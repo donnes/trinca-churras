@@ -1,9 +1,10 @@
 export const theme = {
   colors: {
-    primary: '',
+    primary: '#FFD836',
     black: '#000000',
     white: '#FFFFFF',
-    gray: '#777777',
-    border: '#999999',
+    gray: '#F1F1F1',
+    border: '#998220',
+    red: '#FF3636',
   },
 };
